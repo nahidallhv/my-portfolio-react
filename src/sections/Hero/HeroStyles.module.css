@@ -9,7 +9,7 @@
 
   .hero {
     max-width: 200px;
-    margin-bottom: 40px; /* Mobilde yukarıdan biraz boşluk ekleyerek resmin aşağıda görünmesini sağlıyoruz */
+    margin-bottom: 80px; /* Mobilde yukarıdan biraz boşluk ekleyerek resmin aşağıda görünmesini sağlıyoruz */
   }
 
   span {
