@@ -9,7 +9,7 @@
 
   .hero {
     max-width: 200px;
-    margin-bottom: 20px; /* Mobilde yukarıdan biraz boşluk ekleyerek resmin aşağıda görünmesini sağlıyoruz */
+    margin-bottom: 40px; /* Mobilde yukarıdan biraz boşluk ekleyerek resmin aşağıda görünmesini sağlıyoruz */
   }
 
   span {
@@ -60,7 +60,7 @@
 
 .colorModeContainer {
   position: relative;
-  margin-top: 40px; /* Mobilde ikonun görünürlüğünü artırmak için yukarıdan boşluk ekledik */
+  margin-top: 65px; /* Mobilde ikonun görünürlüğünü artırmak için yukarıdan boşluk ekledik */
 }
 
 .colorMode {
