@@ -60,7 +60,7 @@
 
 .colorModeContainer {
   position: relative;
-  margin-top: 100px; /* Mobilde ikonun görünürlüğünü artırmak için yukarıdan boşluk ekledik */
+  margin-top: 135px; /* Mobilde ikonun görünürlüğünü artırmak için yukarıdan boşluk ekledik */
 }
 
 .colorMode {
