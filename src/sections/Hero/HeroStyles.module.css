@@ -6,11 +6,11 @@
   text-align: center;
   height: 100dvh;
   min-height: 500px;
-  padding-bottom: 50px;
 
   .hero {
     max-width: 200px;
-    margin-bottom: 20px; /* Mobilde yukarıdan biraz boşluk ekleyerek resmin aşağıda görünmesini sağlıyoruz */
+    /* margin-bottom: 80px; */
+     /* Mobilde yukarıdan biraz boşluk ekleyerek resmin aşağıda görünmesini sağlıyoruz */
   }
 
   span {
