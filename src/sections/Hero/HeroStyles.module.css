@@ -80,37 +80,6 @@
   flex-direction: column;
   gap: 20px;
 }
-@media (max-width: 600px) {
-  .colorModeContainer {
-    display: flex;
-    justify-content: center; 
-    margin-top: 20px; 
-  }
-
-  .colorMode {
-    width: 30px; 
-  }
-
-  .hero {
-    max-width: 150px; 
-  }
-
-  .info {
-    padding: 0 10px; 
-  }
-
-  button {
-    width: 100%; 
-  }
-
-  h1 {
-    font-size: 1.5em; 
-  }
-
-  h2 {
-    font-size: 1.2em; 
-  }
-}
 
 @media (width >= 800px) {
   .container {
