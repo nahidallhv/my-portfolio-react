@@ -1,47 +1,51 @@
-import React, { useState } from "react";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import styles from "./ContactStyles.module.css";
 
 function Contact() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const form = useRef();
 
-  const handleSubmit = async (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    const response = await fetch("/api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ name, email, message }),
-    });
 
-    if (response.ok) {
-      alert("Mesajınız gönderildi!");
-      setName("");
-      setEmail("");
-      setMessage("");
-    } else {
-      alert("Mesaj gönderilirken bir hata oluştu.");
-    }
+    emailjs
+      .sendForm('service_szmpd4l', 'template_00d4828', form.current, {
+        publicKey: 'bD66OWwtEg-DTQmKr',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          console.log("message sent");
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
   };
+
 
   return (
     <section id="contact" className={styles.container}>
       <h1 className="sectionTitle">Contact</h1>
-      <form onSubmit={handleSubmit}>
+      {/* <form ref={form} onSubmit={sendEmail}>
+      <label>Name</label>
+      <input type="text" name="user_name" />
+      <label>Email</label>
+      <input type="email" name="user_email" />
+      <label>Message</label>
+      <textarea name="message" />
+      <input type="submit" value="Send" />
+    </form> */}
+    <form ref={form} onSubmit={sendEmail}>
         <div className="formGroup">
           <label htmlFor="name" hidden>
             Name
           </label>
           <input
             type="text"
-            name="name"
+            name="user_name"
             id="name"
             placeholder="Name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            required
           />
         </div>
         <div className="formGroup">
@@ -50,12 +54,9 @@ function Contact() {
           </label>
           <input
             type="email"
-            name="email"
+            name="user_email"
             id="email"
             placeholder="Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
           />
         </div>
         <div className="formGroup">
@@ -66,12 +67,9 @@ function Contact() {
             name="message"
             id="message"
             placeholder="Message"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            required
-          />
+            ></textarea>
         </div>
-        <input className="hover btn" type="submit" value="Submit" />
+        <input className="hover btn" type="submit" value="Send" />
       </form>
     </section>
   );
