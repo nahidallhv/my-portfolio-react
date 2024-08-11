@@ -123,13 +123,13 @@ h1 {
 
 @keyframes rotate {
   0% {
-    transform: rotate(0deg); /* Başlangıç durumu */
+    transform: rotate(0deg); 
   }
   50% {
-    transform: rotate(180deg); /* Yarı dönme noktası */
+    transform: rotate(180deg); 
   }
   100% {
-    transform: rotate(360deg); /* Tam dönme noktası */
+    transform: rotate(360deg);
   }
 }
 
@@ -200,50 +200,50 @@ h2 {
 }
 @media (max-width: 767px) {
   .container {
-    height: auto; /* İçeriğin sığabilmesi için yükseklik ayarlaması */
-    min-height: auto; /* Min-height'i kaldırarak içeriğin daha esnek olmasını sağlar */
-    margin-bottom: 20px; /* Daha az boşluk bırakmak için margin ayarlaması */
-    padding: 20px; /* Padding ekleyerek içerikle kenarlar arasında boşluk bırakır */
+    height: auto; 
+    min-height: auto; 
+    margin-bottom: 20px; 
+    padding: 20px;
   }
 
   .hero {
-    max-width: 150px; /* Mobil ekranlar için daha küçük bir boyut */
-    width: 100%; /* Tam genişlikte olmasını sağlar */
+    max-width: 150px; 
+    width: 100%;
   }
 
   span {
-    flex-direction: column; /* İkonları üst üste yerleştirmek için column düzeni */
-    gap: 15px; /* İkonlar arasındaki boşluğu azaltır */
+    flex-direction: column; 
+    gap: 15px; 
   }
 
   span a img {
-    width: 25px; /* İkonların boyutunu küçültür */
+    width: 25px;
   }
 
   button {
-    width: 100%; /* Butonun tam genişlikte olmasını sağlar */
-    font-size: 18px; /* Daha küçük bir font boyutu */
-    height: 45px; /* Butonun yüksekliğini küçültür */
+    width: 100%; 
+    font-size: 18px; 
+    height: 45px; 
   }
 
   .colorModeContainer {
-    margin-top: 50px; /* Üst margin'i azaltarak daha iyi uyum sağlar */
+    margin-top: 50px; 
   }
 
   .colorMode {
-    width: 20px; /* İkonun boyutunu küçültür */
+    width: 20px;
   }
 
   .description {
-    max-width: 100%; /* Açıklamanın tam genişlikte olmasını sağlar */
-    padding: 10px; /* Daha küçük bir padding */
-    margin-top: 10px; /* Margin'i azaltarak daha kompakt bir görünüm sağlar */
-    font-size: 0.9rem; /* Daha küçük bir font boyutu */
+    max-width: 100%; 
+    padding: 10px; 
+    margin-top: 10px; 
+    font-size: 0.9rem;
   }
 
   h2 {
-    font-size: 1.8rem; /* Başlık boyutunu küçültür */
-    border-right: none; /* Yazı tipi animasyonunu kaldırır */
+    font-size: 1.8rem; 
+    border-right: none; 
   }
 }
 
