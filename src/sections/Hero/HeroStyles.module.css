@@ -198,6 +198,35 @@ h2 {
     transform: translateX(0);
   }
 }
+@media (max-width: 767px) {
+  h2 {
+    font-size: 1.5rem; /* "JUNIOR FRONTEND DEVELOPERS" yazısını küçült */
+  }
+
+  .colorModeContainer {
+    margin-top: 20px; /* Color mode ikonunun yerini ayarla */
+  }
+
+  .colorMode {
+    right: 10px; /* Color mode ikonunu sola çek */
+    width: 25px; /* İkon boyutunu küçült */
+  }
+
+  .description {
+    max-width: 90%; /* p etiketindeki yazıları ekranda tam göstermek için genişliği ayarla */
+    padding: 10px; /* Padding'i küçült */
+    margin-top: 10px; /* Margin'i küçült */
+  }
+
+  .hero {
+    max-width: 150px; /* Hero resminin boyutunu küçült */
+  }
+
+  .container {
+    padding: 20px; /* Container içinde boşluk bırak */
+    height: auto; /* Yüksekliği otomatik ayarla */
+  }
+}
 
 @media (min-width: 800px) {
   .container {
