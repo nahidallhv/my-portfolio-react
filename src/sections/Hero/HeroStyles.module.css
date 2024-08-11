@@ -199,32 +199,51 @@ h2 {
   }
 }
 @media (max-width: 767px) {
-  h2 {
-    font-size: 1.5rem; /* "JUNIOR FRONTEND DEVELOPERS" yazısını küçült */
-  }
-
-  .colorModeContainer {
-    margin-top: 20px; /* Color mode ikonunun yerini ayarla */
-  }
-
-  .colorMode {
-    right: 10px; /* Color mode ikonunu sola çek */
-    width: 25px; /* İkon boyutunu küçült */
-  }
-
-  .description {
-    max-width: 90%; /* p etiketindeki yazıları ekranda tam göstermek için genişliği ayarla */
-    padding: 10px; /* Padding'i küçült */
-    margin-top: 10px; /* Margin'i küçült */
+  .container {
+    height: auto; /* İçeriğin sığabilmesi için yükseklik ayarlaması */
+    min-height: auto; /* Min-height'i kaldırarak içeriğin daha esnek olmasını sağlar */
+    margin-bottom: 20px; /* Daha az boşluk bırakmak için margin ayarlaması */
+    padding: 20px; /* Padding ekleyerek içerikle kenarlar arasında boşluk bırakır */
   }
 
   .hero {
-    max-width: 150px; /* Hero resminin boyutunu küçült */
+    max-width: 150px; /* Mobil ekranlar için daha küçük bir boyut */
+    width: 100%; /* Tam genişlikte olmasını sağlar */
   }
 
-  .container {
-    padding: 20px; /* Container içinde boşluk bırak */
-    height: auto; /* Yüksekliği otomatik ayarla */
+  span {
+    flex-direction: column; /* İkonları üst üste yerleştirmek için column düzeni */
+    gap: 15px; /* İkonlar arasındaki boşluğu azaltır */
+  }
+
+  span a img {
+    width: 25px; /* İkonların boyutunu küçültür */
+  }
+
+  button {
+    width: 100%; /* Butonun tam genişlikte olmasını sağlar */
+    font-size: 18px; /* Daha küçük bir font boyutu */
+    height: 45px; /* Butonun yüksekliğini küçültür */
+  }
+
+  .colorModeContainer {
+    margin-top: 50px; /* Üst margin'i azaltarak daha iyi uyum sağlar */
+  }
+
+  .colorMode {
+    width: 20px; /* İkonun boyutunu küçültür */
+  }
+
+  .description {
+    max-width: 100%; /* Açıklamanın tam genişlikte olmasını sağlar */
+    padding: 10px; /* Daha küçük bir padding */
+    margin-top: 10px; /* Margin'i azaltarak daha kompakt bir görünüm sağlar */
+    font-size: 0.9rem; /* Daha küçük bir font boyutu */
+  }
+
+  h2 {
+    font-size: 1.8rem; /* Başlık boyutunu küçültür */
+    border-right: none; /* Yazı tipi animasyonunu kaldırır */
   }
 }
 
