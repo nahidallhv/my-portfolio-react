@@ -35,7 +35,8 @@ span a {
 
 span a img {
   width: 30px;
-  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out, filter 0.3s ease-in-out;
+  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out,
+    filter 0.3s ease-in-out;
 }
 
 span a img:hover {
@@ -85,7 +86,6 @@ button::after {
   border-radius: 50%;
   transform: translate(-50%, -50%) scale(0);
   animation: ripple 0.6s ease-out;
-  
 }
 
 button:active::after {
@@ -108,7 +108,6 @@ h1 {
   animation: fadeIn 3s ease-out forwards;
 }
 
-
 .colorModeContainer {
   position: relative;
   margin-top: 135px;
@@ -118,15 +117,15 @@ h1 {
   position: absolute;
   right: 0;
   width: 27px;
-  animation: rotate 2s infinite; 
+  animation: rotate 2s infinite;
 }
 
 @keyframes rotate {
   0% {
-    transform: rotate(0deg); 
+    transform: rotate(0deg);
   }
   50% {
-    transform: rotate(180deg); 
+    transform: rotate(180deg);
   }
   100% {
     transform: rotate(360deg);
@@ -142,10 +141,9 @@ h1 {
   margin-top: 20px;
   line-height: 1.6;
   text-align: justify;
-  opacity: 0; 
-  animation: fadeIn 3s ease-out forwards; 
+  opacity: 0;
+  animation: fadeIn 3s ease-out forwards;
 }
-
 
 @keyframes fadeIn {
   from {
@@ -153,21 +151,19 @@ h1 {
     transform: translateY(20px);
   }
   to {
-    opacity: 1; 
-    transform: translateY(0); 
+    opacity: 1;
+    transform: translateY(0);
   }
 }
-
 
 h2 {
   display: inline-block;
   overflow: hidden;
-  white-space: nowrap; 
+  white-space: nowrap;
   animation: typewriter 2s steps(40) 1s 1 normal both;
   font-size: 2.5rem;
-  border-right: 3px solid; 
+  border-right: 3px solid;
 }
-
 
 @keyframes typewriter {
   from {
@@ -178,12 +174,9 @@ h2 {
   }
 }
 
-
 h2 {
   border-right: none;
 }
-
-
 
 .info {
   display: flex;
@@ -200,20 +193,19 @@ h2 {
 }
 @media (max-width: 767px) {
   .container {
-    height: auto; 
-    min-height: auto; 
-    margin-bottom: 20px; 
+    height: auto;
+    min-height: auto;
+    margin-bottom: 20px;
     padding: 20px;
   }
 
   .hero {
-    max-width: 150px; 
+    max-width: 150px;
     width: 100%;
   }
 
   span {
-    flex-direction: column; 
-    gap: 15px; 
+    gap: 15px;
   }
 
   span a img {
@@ -221,29 +213,31 @@ h2 {
   }
 
   button {
-    width: 100%; 
-    font-size: 18px; 
-    height: 45px; 
+    width: 100%;
+    font-size: 18px;
+    height: 45px;
   }
 
   .colorModeContainer {
-    margin-top: 50px; 
+    margin-top: 50px;
   }
 
   .colorMode {
+    margin-right: 200px;
     width: 20px;
   }
 
   .description {
-    max-width: 100%; 
-    padding: 10px; 
-    margin-top: 10px; 
+    max-width: 100%;
+    padding: 10px;
+    margin-top: 10px;
     font-size: 0.9rem;
+    text-align: justify;
   }
 
   h2 {
-    font-size: 1.8rem; 
-    border-right: none; 
+    font-size: 1.6rem;
+    border-right: none;
   }
 }
 
