@@ -1,29 +1,28 @@
-import React, { useState } from 'react';
-import styles from './ContactStyles.module.css';
+import React, { useState } from "react";
+import styles from "./ContactStyles.module.css";
 
 function Contact() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    const response = await fetch('https://nahidallhv.vercel.app/api/contact', {
-      method: 'POST',
+    const response = await fetch("/api/contact", {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({ name, email, message }),
     });
 
     if (response.ok) {
-      alert('Mesajınız gönderildi!');
-      setName('');
-      setEmail('');
-      setMessage('');
+      alert("Mesajınız gönderildi!");
+      setName("");
+      setEmail("");
+      setMessage("");
     } else {
-      alert('Mesaj gönderilirken bir hata oluştu.');
+      alert("Mesaj gönderilirken bir hata oluştu.");
     }
   };
 
@@ -32,7 +31,9 @@ function Contact() {
       <h1 className="sectionTitle">Contact</h1>
       <form onSubmit={handleSubmit}>
         <div className="formGroup">
-          <label htmlFor="name" hidden>Name</label>
+          <label htmlFor="name" hidden>
+            Name
+          </label>
           <input
             type="text"
             name="name"
@@ -44,7 +45,9 @@ function Contact() {
           />
         </div>
         <div className="formGroup">
-          <label htmlFor="email" hidden>Email</label>
+          <label htmlFor="email" hidden>
+            Email
+          </label>
           <input
             type="email"
             name="email"
@@ -56,7 +59,9 @@ function Contact() {
           />
         </div>
         <div className="formGroup">
-          <label htmlFor="message" hidden>Message</label>
+          <label htmlFor="message" hidden>
+            Message
+          </label>
           <textarea
             name="message"
             id="message"
