@@ -1,8 +1,8 @@
 import styles from './ProjectsStyles.module.css';
-import eCommerse from '../../assets/e-c-logo.jpg';
-import chatApp from '../../assets/chat-logo.jpg';
-import animalsBlog from '../../assets/animals-blog.jpg';
-import restoranApp from '../../assets/restoran-logo.jpg';
+import eCommerse from '../../assets/e-c-logo.jpeg';
+import chatApp from '../../assets/chat-logo.jpeg';
+import animalsBlog from '../../assets/animals-blog.jpeg';
+import restoranApp from '../../assets/restoran-logo.jpeg';
 import ProjectCard from '../../common/ProjectCard';
 
 function Projects() {

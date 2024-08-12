@@ -1,0 +1,25 @@
+.scrollToTopButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(3, 49, 49);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.scrollToTopButton:hover {
+    background-color: lightgray; /* Üzerine gelince renk değişimi */
+}
+
+.scrollIcon {
+    width: 24px;
+    height: 24px;
+}
