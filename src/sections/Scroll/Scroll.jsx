@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import styles from "./ScrollStyles.module.css";
-import scrollButton from "../../assets/arrow.png"; // Yukarı kaydırma butonu ikonu
+import scrollButton from "../../assets/arrow2.png";
 
 function ScrollToTop() {
   const [showButton, setShowButton] = useState(false);
 
-  // Sayfa kaydırıldığında butonu göstermek için event listener ekleyelim
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 300) {
@@ -21,11 +20,10 @@ function ScrollToTop() {
     };
   }, []);
 
-  // Butona tıklandığında sayfanın en üstüne gidelim
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // Yumuşak bir kaydırma efekti sağlar
+      behavior: "smooth", 
     });
   };
 
