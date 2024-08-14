@@ -25,7 +25,7 @@
 }
 @media(max-width:767px) {
     .scrollToTopButton{
-        right: 15px;
+        right: 18px;
         width: 40px;
         height: 40px;
     }
