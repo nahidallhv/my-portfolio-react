@@ -1,5 +1,4 @@
-// SkillList.js
-import styles from "../sections/Skills/SkillsStyles.module.css"; // Burada yeni CSS dosyasını import edin
+import styles from "../sections/Skills/SkillsStyles.module.css";
 
 function SkillList({ src }) {
   return (
