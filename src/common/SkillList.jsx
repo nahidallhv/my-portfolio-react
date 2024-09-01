@@ -1,9 +1,11 @@
-function SkillList({ src, skill }) {
+// SkillList.js
+import styles from "../sections/Skills/SkillsStyles.module.css"; // Burada yeni CSS dosyasını import edin
+
+function SkillList({ src }) {
   return (
-    <span>
-      <img src={src} alt="Checkmark icon" />
-      <p>{skill}</p>
-    </span>
+    <div className={styles.iconWrapper}>
+      <img src={src} alt="Skill icon" />
+    </div>
   );
 }
 

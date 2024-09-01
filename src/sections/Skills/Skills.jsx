@@ -1,35 +1,40 @@
+// Skills.js
 import styles from './SkillsStyles.module.css';
-import checkMarkIconDark from '../../assets/checkmark-dark.svg';
-import checkMarkIconLight from '../../assets/checkmark-light.svg';
+import htmlIcon from '../../assets/html-icon.svg';
+import cssIcon from '../../assets/css-icon.svg';
+import javascriptIcon from '../../assets/javascript-icon.svg';
+import typescriptIcon from '../../assets/typescript-icon.svg';
+import nodeIcon from '../../assets/node-icon.svg';
+import reactIcon from '../../assets/react-icon.svg';
+import apiIcon from '../../assets/api-icon.svg';
+import tailwindIcon from '../../assets/tailwind-icon.svg';
+import reduxIcon from '../../assets/redux-icon.svg';
+import gitIcon from '../../assets/git-icon.svg';
+import githubIcon from '../../assets/github-icon.svg';
+import bootstrapIcon from '../../assets/bootstrap-icon.svg';
 import SkillList from '../../common/SkillList';
-import { useTheme } from '../../common/ThemeContext';
 
 function Skills() {
-  const { theme } = useTheme();
-  const checkMarkIcon = theme === 'light' ? checkMarkIconLight : checkMarkIconDark;
-
   return (
     <section id="skills" className={styles.container}>
       <h1 className="sectionTitle">Skills</h1>
       <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill="HTML" />
-        <SkillList src={checkMarkIcon} skill="CSS" />
-        <SkillList src={checkMarkIcon} skill="JavaScript" />
-        <SkillList src={checkMarkIcon} skill="TypeScript" />
-        <SkillList src={checkMarkIcon} skill="Node" />
+        <SkillList src={htmlIcon} />
+        <SkillList src={cssIcon} />
+        <SkillList src={javascriptIcon} />
+        <SkillList src={typescriptIcon} />
+        <SkillList src={nodeIcon} />
+        <SkillList src={reactIcon} />
       </div>
-      <hr />
       <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill="React" />
-        <SkillList src={checkMarkIcon} skill="Rest API" />
-        <SkillList src={checkMarkIcon} skill="Tailwind CSS" />
+        <SkillList src={apiIcon} />
+        <SkillList src={tailwindIcon} />
+        <SkillList src={bootstrapIcon} />
       </div>
-      <hr />
       <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill="Redux" />
-        <SkillList src={checkMarkIcon} skill="Git" />
-        <SkillList src={checkMarkIcon} skill="GitHub" />
-        <SkillList src={checkMarkIcon} skill="Bootstrap" />
+        <SkillList src={reduxIcon} />
+        <SkillList src={gitIcon} />
+        <SkillList src={githubIcon} />
       </div>
     </section>
   );

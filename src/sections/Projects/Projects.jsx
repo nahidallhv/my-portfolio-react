@@ -1,5 +1,5 @@
 import styles from './ProjectsStyles.module.css';
-import eCommerse from '../../assets/e-c-logo.jpeg';
+import diceGame from '../../assets/dice-game.jpeg';
 import chatApp from '../../assets/chat-logo.jpeg';
 import animalsBlog from '../../assets/animals-blog.jpeg';
 import restoranApp from '../../assets/restoran-logo.jpeg';
@@ -11,10 +11,10 @@ function Projects() {
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
         <ProjectCard
-          src={eCommerse}
-          link="#"
-          h3="E-Commerce"
-          p="E-Commerce Website"
+          src={diceGame}
+          link="https://dicegamee.vercel.app/"
+          h3="Dice Game"
+          p="Self-Employed Project"
         />
         <ProjectCard
           src={chatApp}
