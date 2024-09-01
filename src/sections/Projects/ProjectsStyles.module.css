@@ -4,8 +4,8 @@
   text-align: center;
 
   img {
-    width: 250px;
-    height: 200px;
+    width: 200px;
+    height: 150px;
     align-self: center;
     background-color: var(--project-card-bg);
     border-radius: 20px;
