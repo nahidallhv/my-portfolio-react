@@ -1,5 +1,5 @@
 import styles from "./HeroStyles.module.css";
-import heroImg from "../../assets/profile-hero.webp";
+import heroImg from "../../assets/profile-hero.webp"// profil 
 import sun from "../../assets/sun.svg";
 import moon from "../../assets/moon.svg";
 import instagramLight from "../../assets/instagram-light.svg";
@@ -8,7 +8,7 @@ import githubLight from "../../assets/github-light.svg";
 import githubDark from "../../assets/github-dark.svg";
 import linkedinLight from "../../assets/linkedin-light.svg";
 import linkedinDark from "../../assets/linkedin-dark.svg";
-import CV from "../../assets/nahidallhvCV.pdf";   // CV
+import CV from "../../assets/nahidallhvvCV.pdf";   // CV
 import { useTheme } from "../../common/ThemeContext";
 
 function Hero() {
